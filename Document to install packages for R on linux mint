@@ -1,0 +1,56 @@
+sudo apt-get install libsqlite3-dev
+sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+sudo apt-get update
+sudo apt-get install libudunits2-dev libgdal-dev libgeos-dev libproj-dev libsqlite3-dev
+
+R
+
+install.packages("sf")
+
+q()
+
+sudo apt-get install libgdal-dev libgeos-dev libproj-dev
+
+R
+
+install.packages("terra")
+
+q()
+
+sudo apt install libfontconfig1-dev
+sudo apt install apt-file
+apt-file update
+apt-file search fontconfig.pc
+## copy the found directory into "/path/to/fontconfig"
+export PKG_CONFIG_PATH=/path/to/fontconfig:$PKG_CONFIG_PATH
+sudo apt install fontconfig
+sudo apt install libfreetype6-dev
+
+R
+
+install.packages("systemfonts")
+
+q()
+
+apt-file search harfbuzz.pc
+## copy the found directory into "/path/to/fontconfig"
+export PKG_CONFIG_PATH=/path/to/fontconfig:$PKG_CONFIG_PATH
+sudo apt-get install libharfbuzz0b
+sudo apt install libharfbuzz-dev
+sudo apt install libfribidi-dev
+
+R
+
+install.packages("textshaping")
+install.packages("ragg")
+install.packages("tidyverse")
+install.packages("remotes")
+remotes::install_github("paezha/isdas")
+install.packages(c('tinytex',
+                   'rmarkdown'))
+tinytex::install_tinytex()
+
+
+q()
+
+
