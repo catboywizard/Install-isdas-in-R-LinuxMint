@@ -1,3 +1,6 @@
+## sudo apt-get install libsqlite3-dev is the most important command here. if you do nothing else, do this. the main reason R is having trouble installing these packages is likely the lack of sql readr - check after you've installed libsqlite3-dev to see if you even need to do the rest
+## also i would really recommend copy-pasting and enetering these into terminal one line at a time so you can make sure it all executes properly, but probably nothing bad will happen if you do it in chunks
+sudo apt-get update
 sudo apt-get install libsqlite3-dev
 sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
 sudo apt-get update
